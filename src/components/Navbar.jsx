@@ -2,43 +2,39 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
 
 export default function Navbar() {
     return (
         <AppBar position="static" sx={{ backgroundColor: theme => theme.palette.primary.main }}>
             <Toolbar>
-                <Typography variant="h6">
-                    <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+                <Stack direction="row" spacing={2} alignItems="center" justifyContent="flex-end">
+                    <Button component={Link} to="/" variant="contained" color="secondary" sx={buttonStyles}>
                         Home
-                    </Link>
-                </Typography>
-                <Typography variant="h6">
-                    <Link to="/bio" style={{ textDecoration: 'none', color: 'white' }}>
+                    </Button>
+                    <Button component={Link} to="/bio" variant="contained" color="secondary" sx={buttonStyles}>
                         Bio
-                    </Link>
-                </Typography>
-                <Typography variant="h6">
-                    <Link to="/experience" style={{ textDecoration: 'none', color: 'white' }}>
+                    </Button>
+                    <Button component={Link} to="/experience" variant="contained" color="secondary" sx={buttonStyles}>
                         Experience
-                    </Link>
-                </Typography>
-                <Typography variant="h6">
-                    <Link to="/skills" style={{ textDecoration: 'none', color: 'white' }}>
+                    </Button>
+                    <Button component={Link} to="/skills" variant="contained" color="secondary" sx={buttonStyles}>
                         Skills
-                    </Link>
-                </Typography>
-                <Typography variant="h6">
-                    <Link to="/projects" style={{ textDecoration: 'none', color: 'white' }}>
+                    </Button>
+                    <Button component={Link} to="/projects" variant="contained" color="secondary" sx={buttonStyles}>
                         Projects
-                    </Link>
-                </Typography>
-                <Typography variant="h6">
-                    <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>
+                    </Button>
+                    <Button component={Link} to="/contact" variant="contained" color="secondary" sx={buttonStyles}>
                         Contact Me
-                    </Link>
-                </Typography>
+                    </Button>
+                </Stack>
             </Toolbar>
         </AppBar>
     );
 }
+
+const buttonStyles = {
+    boxShadow: '-5px -5px 0 rgba(0, 0, 0, 0.2)', // Add shadow to the top-left
+};

@@ -1,21 +1,35 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
 import { CssBaseline } from "@mui/material";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Bio from "./components/Bio";
-import Experience from "./components/Experience";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
 import Router from "./Router";
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from "@emotion/react";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: '#8561c5',
+      main: '#673ab7',
+      dark: '#482880',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#83e345',
+      main: '#64dd17',
+      dark: '#469a10',
+      contrastText: '#000',
+    },
+  },
+});
 
 export default function App() {
   return (
     <>
-      <CssBaseline />
-      <Navbar />
-      <Router />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Navbar />
+        <Router />
+      </ThemeProvider>
     </>
   );
 }
