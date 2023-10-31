@@ -9,6 +9,13 @@ import mountainIcon from '../images/mountain-icon-64.png';
 import darkmodeIcon from '../images/dark-mode-64.png';
 
 export default function Navbar({ toggleTheme }) {
+    const buttonStyles = {
+        boxShadow: '-5px -5px 0 rgba(0, 0, 0, 0.2)', // Add shadow to the top-left
+        selected: {
+            boxShadow: '-5px 5px 0 rgba(0, 0, 0, 0.2)',
+        },
+    };
+
     const [selectedButton, setSelectedButton] = useState('Home');
 
     const handleButtonClick = (buttonName) => {
@@ -18,7 +25,7 @@ export default function Navbar({ toggleTheme }) {
     return (
         <AppBar position="static" sx={{ backgroundColor: theme => theme.palette.primary.light, boxShadow: 'none' }}>
             <Toolbar>
-                <IconButton component={Link} to="/coming-soon">
+                <IconButton component={Link} to="/coming-soon" onClick={() => handleButtonClick('Mountain')}>
                     <img src={mountainIcon} alt="Mountain Icon" width="64" height="64" />
                 </IconButton>
                 <Stack
@@ -33,9 +40,8 @@ export default function Navbar({ toggleTheme }) {
                         to="/"
                         variant="contained"
                         color="secondary"
-                        sx={buttonStyles}
+                        sx={selectedButton === 'Home' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
                         onClick={() => handleButtonClick('Home')}
-                        style={selectedButton === 'Home' ? { backgroundColor: 'yellow' } : {}}
                     >
                         Home
                     </Button>
@@ -44,9 +50,8 @@ export default function Navbar({ toggleTheme }) {
                         to="/bio"
                         variant="contained"
                         color="secondary"
-                        sx={buttonStyles}
+                        sx={selectedButton === 'Bio' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
                         onClick={() => handleButtonClick('Bio')}
-                        style={selectedButton === 'Bio' ? { backgroundColor: 'yellow' } : {}}
                     >
                         Bio
                     </Button>
@@ -55,9 +60,8 @@ export default function Navbar({ toggleTheme }) {
                         to="/experience"
                         variant="contained"
                         color="secondary"
-                        sx={buttonStyles}
+                        sx={selectedButton === 'Experience' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
                         onClick={() => handleButtonClick('Experience')}
-                        style={selectedButton === 'Experience' ? { backgroundColor: 'yellow' } : {}}
                     >
                         Experience
                     </Button>
@@ -66,9 +70,8 @@ export default function Navbar({ toggleTheme }) {
                         to="/skills"
                         variant="contained"
                         color="secondary"
-                        sx={buttonStyles}
+                        sx={selectedButton === 'Skills' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
                         onClick={() => handleButtonClick('Skills')}
-                        style={selectedButton === 'Skills' ? { backgroundColor: 'yellow' } : {}}
                     >
                         Skills
                     </Button>
@@ -77,9 +80,8 @@ export default function Navbar({ toggleTheme }) {
                         to="/projects"
                         variant="contained"
                         color="secondary"
-                        sx={buttonStyles}
+                        sx={selectedButton === 'Projects' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
                         onClick={() => handleButtonClick('Projects')}
-                        style={selectedButton === 'Projects' ? { backgroundColor: 'yellow' } : {}}
                     >
                         Projects
                     </Button>
@@ -88,9 +90,8 @@ export default function Navbar({ toggleTheme }) {
                         to="/contact"
                         variant="contained"
                         color="secondary"
-                        sx={buttonStyles}
+                        sx={selectedButton === 'Contact Me' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
                         onClick={() => handleButtonClick('Contact Me')}
-                        style={selectedButton === 'Contact Me' ? { backgroundColor: 'yellow' } : {}}
                     >
                         Contact Me
                     </Button>
@@ -103,6 +104,3 @@ export default function Navbar({ toggleTheme }) {
     );
 }
 
-const buttonStyles = {
-    boxShadow: '-5px -5px 0 rgba(0, 0, 0, 0.2)', // Add shadow to the top-left
-};

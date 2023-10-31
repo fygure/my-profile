@@ -15,6 +15,14 @@ export const lightTheme = createTheme({
             dark: '#469a10',
             contrastText: '#000',
         },
+        background: {
+            paper: '#D3D3D3', // Light gray background color
+            default: '#f0f0f0', // Light gray background color
+        },
+        text: {
+            primary: '#333', // Dark gray text color
+            secondary: 'rgba(0, 0, 0, 0.6)',
+        },
     },
 });
 
