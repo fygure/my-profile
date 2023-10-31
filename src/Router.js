@@ -10,6 +10,7 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import ComingSoon from './components/ComingSoon';
 
 export default function Router() {
     return (
@@ -60,6 +61,14 @@ export default function Router() {
                     element={
                         <TransitionComponent>
                             <Contact />
+                        </TransitionComponent>
+                    }
+                />
+                <Route
+                    path="/coming-soon"
+                    element={
+                        <TransitionComponent>
+                            <ComingSoon />
                         </TransitionComponent>
                     }
                 />
