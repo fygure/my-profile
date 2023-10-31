@@ -6,12 +6,13 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import mountainIcon from '../images/mountain-icon-64.png';
+import darkmodeIcon from '../images/dark-mode-64.png';
 
 export default function Navbar({ toggleTheme }) {
     return (
         <AppBar position="static" sx={{ backgroundColor: theme => theme.palette.primary.light, boxShadow: 'none' }}>
             <Toolbar>
-                <IconButton sx={{ marginRight: 2 }}>
+                <IconButton sx={{}}>
                     <img src={mountainIcon} alt="Mountain Icon" width="64" height="64" />
                 </IconButton>
                 <Stack
@@ -40,7 +41,9 @@ export default function Navbar({ toggleTheme }) {
                         Contact Me
                     </Button>
                 </Stack>
-                <Button onClick={toggleTheme}>Toggle Theme</Button>
+                <IconButton onClick={toggleTheme}>
+                    <img src={darkmodeIcon} alt="DarkMode Icon" width="64" height="64" />
+                </IconButton>
             </Toolbar>
         </AppBar>
     );
