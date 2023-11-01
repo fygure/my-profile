@@ -108,7 +108,7 @@ export default function Hero() {
                         height: '500px',
                     }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', width: '100%', background: 'inherit' }}>
-                            <Box sx={{ flex: '1', padding: '0', background: 'inherit' }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', flex: '1', padding: '0', background: 'inherit' }}>
                                 <Typography variant="h6" component="div" paragraph sx={{ letterSpacing: '0.05em' }}>
                                     About Me
                                 </Typography>
@@ -128,7 +128,7 @@ export default function Hero() {
                                     I learn through teaching and individually contributing towards my team projects.
                                 </Typography>
                             </Box>
-                            <Box sx={{ flex: '3', marginLeft: '0' }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', flex: '3', marginLeft: '0' }}>
                                 <Slideshow />
                             </Box>
                         </Box>
