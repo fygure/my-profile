@@ -23,84 +23,86 @@ export default function Navbar({ toggleTheme }) {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: theme => theme.palette.primary.light, boxShadow: 'none' }}>
-            <Toolbar>
-                <IconButton component={Link} to="/coming-soon" onClick={() => handleButtonClick('Mountain')}>
-                    <img src={mountainIcon} alt="Mountain Icon" width="64" height="64" />
-                </IconButton>
-                <Stack
-                    direction="row"
-                    spacing={2}
-                    alignItems="center"
-                    justifyContent="center"
-                    sx={{ width: '100%' }}
-                >
-                    <Button
-                        component={Link}
-                        to="/"
-                        variant="contained"
-                        color="secondary"
-                        sx={selectedButton === 'Home' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
-                        onClick={() => handleButtonClick('Home')}
+        <>
+            <AppBar position="static" sx={{ backgroundColor: theme => theme.palette.primary.light, boxShadow: 'none' }}>
+                <Toolbar>
+                    <IconButton component={Link} to="/coming-soon" onClick={() => handleButtonClick('Mountain')}>
+                        <img src={mountainIcon} alt="Mountain Icon" width="64" height="64" />
+                    </IconButton>
+                    <Stack
+                        direction="row"
+                        spacing={2}
+                        alignItems="center"
+                        justifyContent="center"
+                        sx={{ width: '100%' }}
                     >
-                        Home
-                    </Button>
-                    <Button
-                        component={Link}
-                        to="/bio"
-                        variant="contained"
-                        color="secondary"
-                        sx={selectedButton === 'Bio' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
-                        onClick={() => handleButtonClick('Bio')}
-                    >
-                        Bio
-                    </Button>
-                    <Button
-                        component={Link}
-                        to="/experience"
-                        variant="contained"
-                        color="secondary"
-                        sx={selectedButton === 'Experience' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
-                        onClick={() => handleButtonClick('Experience')}
-                    >
-                        Experience
-                    </Button>
-                    <Button
-                        component={Link}
-                        to="/skills"
-                        variant="contained"
-                        color="secondary"
-                        sx={selectedButton === 'Skills' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
-                        onClick={() => handleButtonClick('Skills')}
-                    >
-                        Skills
-                    </Button>
-                    <Button
-                        component={Link}
-                        to="/projects"
-                        variant="contained"
-                        color="secondary"
-                        sx={selectedButton === 'Projects' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
-                        onClick={() => handleButtonClick('Projects')}
-                    >
-                        Projects
-                    </Button>
-                    <Button
-                        component={Link}
-                        to="/contact"
-                        variant="contained"
-                        color="secondary"
-                        sx={selectedButton === 'Contact Me' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
-                        onClick={() => handleButtonClick('Contact Me')}
-                    >
-                        Contact Me
-                    </Button>
-                </Stack>
-                <IconButton onClick={toggleTheme}>
-                    <img src={darkmodeIcon} alt="DarkMode Icon" width="64" height="64" />
-                </IconButton>
-            </Toolbar>
-        </AppBar>
+                        <Button
+                            component={Link}
+                            to="/"
+                            variant="contained"
+                            color="secondary"
+                            sx={selectedButton === 'Home' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
+                            onClick={() => handleButtonClick('Home')}
+                        >
+                            Home
+                        </Button>
+                        <Button
+                            component={Link}
+                            to="/bio"
+                            variant="contained"
+                            color="secondary"
+                            sx={selectedButton === 'Bio' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
+                            onClick={() => handleButtonClick('Bio')}
+                        >
+                            Bio
+                        </Button>
+                        <Button
+                            component={Link}
+                            to="/experience"
+                            variant="contained"
+                            color="secondary"
+                            sx={selectedButton === 'Experience' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
+                            onClick={() => handleButtonClick('Experience')}
+                        >
+                            Experience
+                        </Button>
+                        <Button
+                            component={Link}
+                            to="/skills"
+                            variant="contained"
+                            color="secondary"
+                            sx={selectedButton === 'Skills' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
+                            onClick={() => handleButtonClick('Skills')}
+                        >
+                            Skills
+                        </Button>
+                        <Button
+                            component={Link}
+                            to="/projects"
+                            variant="contained"
+                            color="secondary"
+                            sx={selectedButton === 'Projects' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
+                            onClick={() => handleButtonClick('Projects')}
+                        >
+                            Projects
+                        </Button>
+                        <Button
+                            component={Link}
+                            to="/contact"
+                            variant="contained"
+                            color="secondary"
+                            sx={selectedButton === 'Contact Me' ? { ...buttonStyles.selected, backgroundColor: 'yellow' } : buttonStyles}
+                            onClick={() => handleButtonClick('Contact Me')}
+                        >
+                            Contact Me
+                        </Button>
+                    </Stack>
+                    <IconButton onClick={toggleTheme}>
+                        <img src={darkmodeIcon} alt="DarkMode Icon" width="64" height="64" />
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
+        </>
     );
 }
 

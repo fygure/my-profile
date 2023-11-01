@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CssBaseline } from '@mui/material';
 import Navbar from './components/Navbar';
 import Router from './Router';
+import Footer from './components/Footer';
 import { ThemeProvider } from '@mui/material/styles';
 import { lightTheme, darkTheme } from './themes';
 
@@ -15,10 +16,13 @@ export default function App() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Navbar toggleTheme={toggleTheme} />
-      <Router />
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Navbar toggleTheme={toggleTheme} />
+        <Router />
+        <Footer />
+      </ThemeProvider>
+    </>
   );
 }
