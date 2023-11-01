@@ -79,19 +79,19 @@ export default function Hero() {
                             I'm a versatile <span style={{ color: theme.palette.secondary.dark }}>{text}</span>_
                         </Typography>
                         <Box sx={{ display: 'flex', justifyContent: 'flex-start' }}>
-                            <IconButton sx={{ padding: 0 }}>
+                            <IconButton sx={{ padding: 0, marginRight: '20px' }}>
                                 <Link to="https://www.linkedin.com/in/maximillianchalitsios/" target="_blank" rel="noopener noreferrer">
-                                    <LinkedInIcon sx={{ fontSize: 50 }} color="primary" />
+                                    <LinkedInIcon sx={{ fontSize: 52 }} color="primary" />
                                 </Link>
                             </IconButton>
-                            <IconButton sx={{ padding: 0 }}>
+                            <IconButton sx={{ padding: 0, marginRight: '20px' }}>
                                 <Link to="https://github.com/fygure" target="_blank" rel="noopener noreferrer">
-                                    <GitHubIcon sx={{ fontSize: 45 }} color="primary" />
+                                    <GitHubIcon sx={{ fontSize: 46 }} color="primary" />
                                 </Link>
                             </IconButton>
-                            <IconButton sx={{ padding: 0 }}>
+                            <IconButton sx={{ padding: 0, marginRight: '20px' }}>
                                 <Link to="https://drive.google.com/file/d/1Bn-XDe-BvhkMut2lAkTz-qWxq6ekoTgW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                    <DescriptionIcon sx={{ fontSize: 50 }} color="primary" />
+                                    <DescriptionIcon sx={{ fontSize: 47 }} color="primary" />
                                 </Link>
                             </IconButton>
                         </Box>
@@ -107,7 +107,7 @@ export default function Hero() {
                         height: '500px',
                     }}>
                         <Typography variant="h5" component="div">
-                            Some 3D Animation Coming Soon
+                            Caterpillar Here
                         </Typography>
                     </Paper>
                 </Grid>
