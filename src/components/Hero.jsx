@@ -79,19 +79,19 @@ export default function Hero() {
                             I'm a versatile <span style={{ color: theme.palette.secondary.dark }}>{text}</span>_
                         </Typography>
                         <Box sx={{ display: 'flex', justifyContent: 'flex-start' }}>
-                            <IconButton sx={{ margin: '0 10px' }}>
+                            <IconButton sx={{ padding: 0 }}>
                                 <Link to="https://www.linkedin.com/in/maximillianchalitsios/" target="_blank" rel="noopener noreferrer">
-                                    <LinkedInIcon sx={{ fontSize: 40 }} color="primary" />
+                                    <LinkedInIcon sx={{ fontSize: 50 }} color="primary" />
                                 </Link>
                             </IconButton>
-                            <IconButton sx={{ margin: '0 10px' }}>
+                            <IconButton sx={{ padding: 0 }}>
                                 <Link to="https://github.com/fygure" target="_blank" rel="noopener noreferrer">
-                                    <GitHubIcon sx={{ fontSize: 40 }} color="primary" />
+                                    <GitHubIcon sx={{ fontSize: 45 }} color="primary" />
                                 </Link>
                             </IconButton>
-                            <IconButton sx={{ margin: '0 10px' }} >
+                            <IconButton sx={{ padding: 0 }}>
                                 <Link to="https://drive.google.com/file/d/1Bn-XDe-BvhkMut2lAkTz-qWxq6ekoTgW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                    <DescriptionIcon sx={{ fontSize: 40 }} color="primary" />
+                                    <DescriptionIcon sx={{ fontSize: 50 }} color="primary" />
                                 </Link>
                             </IconButton>
                         </Box>

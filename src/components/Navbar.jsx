@@ -46,7 +46,7 @@ export default function Navbar({ toggleTheme }) {
                         >
                             Home
                         </Button>
-                        <Button
+                        {/* <Button
                             component={Link}
                             to="/bio"
                             variant="contained"
@@ -55,7 +55,7 @@ export default function Navbar({ toggleTheme }) {
                             onClick={() => handleButtonClick('Bio')}
                         >
                             Bio
-                        </Button>
+                        </Button> */}
                         <Button
                             component={Link}
                             to="/experience"
