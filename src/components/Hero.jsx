@@ -6,6 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DescriptionIcon from '@mui/icons-material/Description';
 import { useTheme } from '@mui/material/styles';
+import Slideshow from './Slideshow';
 
 
 export default function Hero() {
@@ -14,7 +15,7 @@ export default function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [erasing, setErasing] = useState(false);
 
-    const strings = useMemo(() => ['software engineer', 'app developer', 'cloud architect', 'mountaineer'], []);
+    const strings = useMemo(() => ['software engineer', 'app developer', 'cloud architect', 'human'], []);
 
     useEffect(() => {
         const typeSpeed = 100; // ms
@@ -65,18 +66,18 @@ export default function Hero() {
                 <Grid item xs={6}>
                     <Paper elevation={3} sx={{
                         padding: '32px',
-                        margin: '64px 72px 64px 64px',
+                        margin: '64px 64px 64px 64px',
                         backgroundColor: theme.palette.background.paper,
                         height: '500px',
                     }}>
                         <Typography variant="h5" component="div" paragraph sx={{ letterSpacing: '0.05em' }}>
-                            Hello World, my name is
+                            Hello World, I'm
                         </Typography>
                         <Typography variant="h3" component="div" paragraph fontWeight="bold" sx={{ letterSpacing: '0.0em' }}>
                             Maximillian Chalitsios
                         </Typography>
                         <Typography variant="h5" component="div" paragraph sx={{ letterSpacing: '0.05em' }}>
-                            I'm a versatile <span style={{ color: theme.palette.secondary.dark }}>{text}</span>_
+                            a versatile <span style={{ color: theme.palette.secondary.dark }}>{text}</span>_
                         </Typography>
                         <Box sx={{ display: 'flex', justifyContent: 'flex-start' }}>
                             <IconButton sx={{ padding: 0, marginRight: '20px' }}>
@@ -102,13 +103,37 @@ export default function Hero() {
                 <Grid item xs={6}>
                     <Paper elevation={3} sx={{
                         padding: '32px',
-                        margin: '64px 64px 64px 16px',
+                        margin: '64px 64px 64px 32px',
                         backgroundColor: theme.palette.background.paper,
                         height: '500px',
                     }}>
-                        <Typography variant="h5" component="div">
-                            Caterpillar Here
-                        </Typography>
+                        <Box sx={{ display: 'flex', flexDirection: 'row', width: '100%', background: 'inherit' }}>
+                            <Box sx={{ flex: '1', padding: '0', background: 'inherit' }}>
+                                <Typography variant="h6" component="div" paragraph sx={{ letterSpacing: '0.05em' }}>
+                                    About Me
+                                </Typography>
+                                <Typography variant="body2" sx={{ letterSpacing: '0.05em', color: theme.palette.secondary.dark }}>
+                                    Coder, Climber, Solver.
+                                </Typography>
+                                <br />
+                                <Typography variant="body1">
+                                    I'm an adventurous learner with a passion for technology and nature.
+                                </Typography>
+                                <br />
+                                <Typography variant="body1">
+                                    I believe in being well-rounded and integrating knowledge from other domains.
+                                </Typography>
+                                <br />
+                                <Typography variant="body1">
+                                    I learn through teaching and individually contributing towards my team projects.
+                                </Typography>
+                            </Box>
+                            <Box sx={{ flex: '3', marginLeft: '0' }}>
+                                <Slideshow />
+                            </Box>
+                        </Box>
+
+
                     </Paper>
                 </Grid>
             </Grid>

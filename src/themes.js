@@ -17,8 +17,8 @@ export const lightTheme = createTheme({
             contrastText: '#000',
         },
         background: {
-            paper: '#D3D3D3', // Light gray background color
-            default: '#f0f0f0', // Light gray background color
+            paper: '#C8C8C8', // Light gray background color
+            default: '#F5F3EC', // Light gray background color
         },
         text: {
             primary: '#333', // Dark gray text color
@@ -42,6 +42,10 @@ export const darkTheme = createTheme({
             main: '#64dd17',
             dark: '#469a10',
             contrastText: '#000',
+        },
+        background: {
+            paper: '#202020',
+            default: '#202020',
         },
     },
 });

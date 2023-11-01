@@ -5,8 +5,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
-import mountainIcon from '../images/mountain-icon-64.png';
+//import mountainIcon from '../images/mountain-icon-64.png';
 import darkmodeIcon from '../images/dark-mode-64.png';
+import { ReactComponent as MountainLogo } from '../images/mountain-logo.svg';
 
 export default function Navbar({ toggleTheme }) {
     const buttonStyles = {
@@ -27,7 +28,8 @@ export default function Navbar({ toggleTheme }) {
             <AppBar position="static" sx={{ backgroundColor: theme => theme.palette.primary.light, boxShadow: 'none' }}>
                 <Toolbar>
                     <IconButton component={Link} to="/coming-soon" onClick={() => handleButtonClick('Mountain')}>
-                        <img src={mountainIcon} alt="Mountain Icon" width="64" height="64" />
+                        {/* <img src={mountainIcon} alt="Mountain Icon" width="64" height="64" /> */}
+                        <MountainLogo />
                     </IconButton>
                     <Stack
                         direction="row"
