@@ -1,5 +1,9 @@
+import { Container, Box } from '@mui/material';
+
 export default function Projects() {
     return (
-        <div>Projects</div>
+        <Container maxWidth="sm">
+            <Box sx={{ bgcolor: '#cfe8fc', height: '68vh' }}>Projects</Box>
+        </Container>
     )
 }
