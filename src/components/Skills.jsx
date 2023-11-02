@@ -1,4 +1,4 @@
-import { Container, Box, Typography, Paper } from '@mui/material';
+import { Container, Typography, Paper } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 export default function Skills() {
@@ -15,7 +15,6 @@ export default function Skills() {
                 backgroundColor: theme.palette.background.paper,
                 height: '500px',
             }}>
-                {/* Content of your "Skills" component goes here */}
                 <Typography variant="h5" component="div" paragraph sx={{ letterSpacing: '0.05em' }}>
                     Skills
                 </Typography>

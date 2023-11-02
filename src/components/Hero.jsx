@@ -129,16 +129,19 @@ export default function Hero() {
                         height: '500px',
                     }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', width: '100%', background: 'inherit' }}>
-
-
                             <Box sx={{ display: 'flex', flexDirection: 'row', flex: '3', marginLeft: '0' }}>
                                 <Slideshow />
                             </Box>
 
-                            <Box sx={{ display: 'flex', flexDirection: 'column', flex: '1', marginLeft: '0' }}>
-                                <Typography variant="body1">
-                                    Here will live the contact me form
+                            <Box sx={{ display: 'flex', flexDirection: 'column', flex: '1', marginLeft: '0', padding: '8px', justifyContent: 'center', alignItems: 'center' }}>
+                                <Typography variant="h4">
+                                    Work in
                                 </Typography>
+                                <br />
+                                <Typography variant="h4">
+                                    Progress
+                                </Typography>
+                                <br />
                             </Box>
                         </Box>
 
