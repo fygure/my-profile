@@ -102,7 +102,7 @@ export default function Hero() {
                             <Typography variant="h5" component="div" sx={{ letterSpacing: '0.05em', paddingTop: '10px', marginBottom: '16px' }}>
                                 About Me
                             </Typography>
-                            <Typography variant="body2" sx={{ letterSpacing: '0.05em', color: theme.palette.secondary.dark, marginBottom: '16px' }}>
+                            <Typography variant="body1" sx={{ letterSpacing: '0.05em', color: theme.palette.secondary.dark, marginBottom: '16px' }}>
                                 Coder, Climber, Solver.
                             </Typography>
                             <Typography variant="body1" sx={{ letterSpacing: '0.05em', marginBottom: '16px' }}>

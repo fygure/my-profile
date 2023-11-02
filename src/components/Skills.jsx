@@ -9,13 +9,14 @@ export default function Skills() {
         <Container maxWidth="sm">
             <Paper elevation={3} sx={{
                 display: 'flex',
+                flexDirection: 'column',
                 padding: '32px',
-                margin: '32px',
+                margin: '64px 64px 64px 64px',
                 backgroundColor: theme.palette.background.paper,
-                height: '250px',
+                height: '500px',
             }}>
                 {/* Content of your "Skills" component goes here */}
-                <Typography variant="h6" component="div" paragraph sx={{ letterSpacing: '0.05em' }}>
+                <Typography variant="h5" component="div" paragraph sx={{ letterSpacing: '0.05em' }}>
                     Skills
                 </Typography>
                 <Typography variant="body2" sx={{ letterSpacing: '0.05em', color: theme.palette.secondary.dark }}>
