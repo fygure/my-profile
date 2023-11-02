@@ -58,10 +58,12 @@ const Slideshow = () => {
                     maxHeight: '100%',
                     height: 'auto',
                     width: 'auto',
-                    border: `2px solid ${theme.palette.secondary.dark}`,
-                    borderRadius: '10px',
+                    border: `0px 0px 0px 0px ${theme.palette.secondary.dark}`,
+                    borderRadius: '5px',
+                    boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
                 }}
             />
+
         </Box>
     );
 };

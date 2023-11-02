@@ -65,6 +65,8 @@ export default function Hero() {
                 {/* Left Side */}
                 <Grid item xs={6}>
                     <Paper elevation={3} sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
                         padding: '32px',
                         margin: '64px 64px 64px 64px',
                         backgroundColor: theme.palette.background.paper,
@@ -96,40 +98,47 @@ export default function Hero() {
                                 </Link>
                             </IconButton>
                         </Box>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', flex: '1', padding: '0', background: 'inherit' }}>
+                            <Typography variant="h5" component="div" sx={{ letterSpacing: '0.05em', paddingTop: '10px', marginBottom: '16px' }}>
+                                About Me
+                            </Typography>
+                            <Typography variant="body2" sx={{ letterSpacing: '0.05em', color: theme.palette.secondary.dark, marginBottom: '16px' }}>
+                                Coder, Climber, Solver.
+                            </Typography>
+                            <Typography variant="body1" sx={{ letterSpacing: '0.05em', marginBottom: '16px' }}>
+                                I'm an adventurous learner with a passion for technology and nature.
+                            </Typography>
+                            <Typography variant="body1" sx={{ letterSpacing: '0.05em', marginBottom: '16px' }}>
+                                I believe in being well-rounded and integrating knowledge from other domains.
+                            </Typography>
+                            <Typography variant="body1" sx={{ letterSpacing: '0.05em' }}>
+                                On my free time I tinker on a variety of problem sets.
+                            </Typography>
+                        </Box>
+
                     </Paper>
                 </Grid>
 
                 {/* Right Side */}
                 <Grid item xs={6}>
                     <Paper elevation={3} sx={{
+                        display: 'flex',
                         padding: '32px',
                         margin: '64px 64px 64px 32px',
                         backgroundColor: theme.palette.background.paper,
                         height: '500px',
                     }}>
-                        <Box sx={{ display: 'flex', flexDirection: 'row', width: '100%', background: 'inherit' }}>
-                            <Box sx={{ display: 'flex', flexDirection: 'column', flex: '1', padding: '0', background: 'inherit' }}>
-                                <Typography variant="h6" component="div" paragraph sx={{ letterSpacing: '0.05em' }}>
-                                    About Me
-                                </Typography>
-                                <Typography variant="body2" sx={{ letterSpacing: '0.05em', color: theme.palette.secondary.dark }}>
-                                    Coder, Climber, Solver.
-                                </Typography>
-                                <br />
-                                <Typography variant="body1">
-                                    I'm an adventurous learner with a passion for technology and nature.
-                                </Typography>
-                                <br />
-                                <Typography variant="body1">
-                                    I believe in being well-rounded and integrating knowledge from other domains.
-                                </Typography>
-                                <br />
-                                <Typography variant="body1">
-                                    I learn through teaching and individually contributing towards my team projects.
-                                </Typography>
-                            </Box>
-                            <Box sx={{ display: 'flex', flexDirection: 'column', flex: '3', marginLeft: '0' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', width: '100%', background: 'inherit' }}>
+
+
+                            <Box sx={{ display: 'flex', flexDirection: 'row', flex: '3', marginLeft: '0' }}>
                                 <Slideshow />
+                            </Box>
+
+                            <Box sx={{ display: 'flex', flexDirection: 'column', flex: '1', marginLeft: '0' }}>
+                                <Typography variant="body1">
+                                    Here will live the contact me form
+                                </Typography>
                             </Box>
                         </Box>
 

@@ -88,7 +88,7 @@ export default function Navbar({ toggleTheme }) {
                         >
                             Projects
                         </Button>
-                        <Button
+                        {/* <Button
                             component={Link}
                             to="/contact"
                             variant="contained"
@@ -97,7 +97,7 @@ export default function Navbar({ toggleTheme }) {
                             onClick={() => handleButtonClick('Contact Me')}
                         >
                             Contact Me
-                        </Button>
+                        </Button> */}
                     </Stack>
                     <IconButton onClick={toggleTheme}>
                         <img src={darkmodeIcon} alt="DarkMode Icon" width="64" height="64" />
