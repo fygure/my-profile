@@ -23,6 +23,7 @@ const Slideshow = () => {
 
             setTimeout(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
+
                 setFade('fade-in');
             }, transitionDuration);
         }, 10000);
