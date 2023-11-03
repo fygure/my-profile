@@ -19,7 +19,7 @@ export default function Skills() {
                     Skills
                 </Typography>
                 <Typography variant="body2" sx={{ letterSpacing: '0.05em', color: theme.palette.secondary.dark }}>
-                    List your skills here
+                    List skills here
                 </Typography>
             </Paper>
             {/* <Box sx={{ bgcolor: '#cfe8fc', height: '68vh' }}>Skills</Box> */}
