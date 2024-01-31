@@ -15,7 +15,7 @@ export default function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [erasing, setErasing] = useState(false);
 
-    const strings = useMemo(() => ['software engineer', 'app developer', 'cloud architect', 'human'], []);
+    const strings = useMemo(() => ['software engineer', 'programmer', 'cloud architect',], []);
 
     useEffect(() => {
         const typeSpeed = 100; // ms
