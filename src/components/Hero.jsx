@@ -93,7 +93,7 @@ export default function Hero() {
                                 </Link>
                             </IconButton>
                             <IconButton sx={{ padding: 0, marginRight: '20px' }}>
-                                <Link to="https://drive.google.com/file/d/1W4gTMDxXk8wYaRPrElAcVab5oFrSw-Hn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <Link to="https://fygure-resume-bucket.s3.amazonaws.com/maximillian_chalitsios.pdf" target="_blank" rel="noopener noreferrer">
                                     <DescriptionIcon sx={{ fontSize: 47 }} color="primary" />
                                 </Link>
                             </IconButton>
